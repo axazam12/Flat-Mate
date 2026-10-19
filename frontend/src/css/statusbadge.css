@@ -1,0 +1,46 @@
+.badge{
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    min-width: 90px;
+}
+.badge.pending{
+    background: #f39c12;
+}
+.badge.approved{
+    background: #27ae60;
+}
+.badge.rejected{
+    background: #e74c3c;
+}
+.badge.paid{
+    background:#27ae60;
+}
+.badge.late{
+    background: #c0392b;
+}
+.badge.open{
+    background: #f39c12;
+}
+.badge.progress{
+    background: #2980b9;
+}
+.badge.resolved{
+    background: #27ae60;
+}
+.badge.cancelled{
+    background: #7f8c8d;
+}
+.badge.active{
+    background: #2ecc71;
+}
+.badge.completed{
+    background: #3498db;
+}
+.badge.terminated{
+    background: #34495e;
+}

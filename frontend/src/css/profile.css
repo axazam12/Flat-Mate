@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.profile-container,
+.edit-profile-container{
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+.profile-cards,
+.edit-profile-container form{
+    width: 100%;
+    max-width: 1150px;
+    background: #FFFFFF;
+    border: 1px solid #D8DEE5;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+.profile-cards h2,
+.edit-profile-container h2{
+    text-align: center;
+    color: #0E2234;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+.profile-details h4{
+    color: #455A6B;
+    margin: 30px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2D4559;
+}
+.profile-image{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 30px;
+    border: 5px solid #455A68;
+}
+.profile-details{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(300px,1fr));
+    gap: 22px;
+}
+.profile-details p{
+    background: #F8FAFC;
+    padding: 16px;
+    border-radius: 10px;
+    color: #5B6775;
+    border-left: 4px solid #455A68;
+    word-break: break-word;
+    border: 1px solid #D8DEE5;
+}
+.profile-details strong{
+    color: #0E2234;
+    margin-right: 5px;
+}
+.profile-details h4{
+    grid-column: 1/-1;
+}
+.profile-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.profile-buttons a{
+    text-decoration: none;
+}
+.profile-btn{
+    background: #455A6B;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 35px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .3s;
+}
+.profile-btn:hover{
+    background: #2D4559;
+}
+.profile-buttons button,
+.edit-profile-container button{
+    background: #455A68;
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .3s;
+}
+.profile-buttons button:hover,
+.edit-profile-container button:hover{
+    background: #2D4559;
+    transform: translateY(-2px);
+}
+.edit-profile-container{
+    flex-direction: column;
+    align-items: center;
+}
+.edit-profile-container h2{
+    margin-bottom: 25px;
+}
+.edit-profile-container form{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(280px,1fr));
+    gap: 20px;
+}
+.edit-profile-container input{
+    width: 100%;
+    padding: 14px 18px;
+    background: white;
+    border: 1px solid #CCD6DD;
+    border-radius: 10px;
+    color: #0E2234;
+    outline: none;
+    font-size: 15px;
+}
+.edit-profile-container input::placeholder{
+    color: #6A747E;
+}
+.edit-profile-container input:focus{
+    border-color: #455A6B;
+    box-shadow: 0 0 10px rgba(164,164,162,.25);
+}
+.edit-profile-container button{
+    grid-column: 1/-1;
+    margin-top: 15px;
+    width: 240px;
+    justify-content: center;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.form-group label{
+    color: #0E2234;
+    font-weight: 600;
+    font-size: 15px;
+}
+.upload-form{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.upload-form input[type="file"]{
+    padding: 15px;
+    border: 1px solid #CCD6DD;
+    border-radius: 10px;
+    background: #fff;
+}
+.upload-form button{
+    width: 220px;
+    align-self: center;
+}
+.change-password-form{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.change-password-form input{
+    width: 100%;
+}
+.profile-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.profile-header h3{
+    margin-top: 15px;
+    color: #0E2234;
+    font-size: 16px;
+}
+.profile-header span{
+    color: #6A747E;
+    margin-top: 5px;
+    font-size: 16px;
+}

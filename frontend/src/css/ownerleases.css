@@ -1,0 +1,624 @@
+.owner-page {
+    width: 100%;
+    min-height: 100%;
+    padding: 35px 40px 60px;
+    background: #f7f9fb;
+    box-sizing: border-box;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    gap: 20px;
+}
+
+.page-header h2 {
+    margin: 0 0 6px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1b3346;
+}
+
+.page-header p {
+    margin: 0;
+    color: #6a747e;
+    font-size: 15px;
+}
+.primary-btn{
+    background:#1b3346;
+    color:#fff;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.primary-btn:hover{
+    background:#0e2234;
+}
+
+.lease-filter{
+    display:flex;
+    gap:12px;
+    margin:30px 0;
+    flex-wrap:wrap;
+}
+
+.lease-filter button{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#e7eaed;
+    cursor:pointer;
+    font-weight:600;
+    color:#1b3346;
+    transition:.3s;
+}
+
+.lease-filter button.active,
+.lease-filter button:hover{
+    background:#455a6b;
+    color:#fff;
+}
+
+.lease-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.lease-table thead{
+    background:#1b3346;
+    color:#fff;
+}
+
+.lease-table th,
+.lease-table td{
+    padding:16px;
+    text-align:left;
+    border-bottom:1px solid #eee;
+}
+
+.lease-table tbody tr:hover{
+    background:#f7f9fb;
+}
+
+.empty-table{
+    text-align:center;
+    padding:50px;
+    color:#777;
+}
+
+.table-actions{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.view-btn,
+.complete-btn,
+.reject-btn{
+    padding:8px 15px;
+    border:none;
+    border-radius:6px;
+    color:#fff;
+    cursor:pointer;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.view-btn{
+    background:#455a6b;
+}
+
+.view-btn:hover{
+    background:#2d4559;
+}
+
+.complete-btn{
+    background:#2d4559;
+}
+
+.complete-btn:hover{
+    background:#1b3346;
+}
+
+.reject-btn{
+    background:#8d2b2b;
+}
+
+.reject-btn:hover{
+    background:#701b1b;
+}
+
+.status{
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+    display:inline-block;
+}
+
+.status.pending-acceptance{
+    background:#fff4d9;
+    color:#b78103;
+}
+
+.status.active{
+    background:#dff6e5;
+    color:#1c7c36;
+}
+
+.status.completed{
+    background:#ddeeff;
+    color:#225ea8;
+}
+
+.status.terminated{
+    background:#ffe1e1;
+    color:#b12222;
+}
+
+.status.declined{
+    background:#f1f1f1;
+    color:#666;
+}
+
+.waiting-text{
+    color:#b78103;
+    font-weight:600;
+}
+
+.completed-text{
+    color:#2d4559;
+    font-weight:600;
+}
+
+.terminated-text{
+    color:#b12222;
+    font-weight:600;
+}
+
+.rejected-text{
+    color:#777;
+    font-weight:600;
+}
+.seconadry-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90px;
+    height: 42px;
+    padding: 0 18px;
+    background: #ffffff;
+    color: #1b3346;
+    border: 1px solid #d8dee5;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.seconadry-btn:hover {
+    background: #1b3346;
+    border-color: #1b3346;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.details-card {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #e0e5e9;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(27, 51, 70, 0.07);
+    box-sizing: border-box;
+}
+
+.details-card hr {
+    border: 0;
+    border-top: 1px solid #e7ebee;
+    margin: 32px 0;
+}
+
+.lease-status-card {
+    padding: 24px;
+    background: #f8fafb;
+    border: 1px solid #e1e6ea;
+    border-radius: 12px;
+}
+
+.lease-status-card h3 {
+    margin: 0 0 18px;
+    font-size: 18px;
+    color: #1b3346;
+}
+
+.status-row {
+    margin-bottom: 22px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.details-grid p {
+    margin: 0 0 12px;
+    color: #626d76;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.details-grid p:last-child {
+    margin-bottom: 0;
+}
+
+.details-grid strong {
+    color: #1b3346;
+    font-weight: 600;
+}
+
+.property-section {
+    display: grid;
+    grid-template-columns: 360px minmax(0, 1fr);
+    gap: 35px;
+    align-items: center;
+}
+
+.property-section > h3 {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: #1b3346;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.property-image {
+    width: 360px;
+    height: 240px;
+    display: block;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid #dce2e6;
+    background: #f2f4f6;
+}
+
+.property-info {
+    min-width: 0;
+    padding-right: 15px;
+}
+
+.property-info h3 {
+    margin: 0 0 12px;
+    color: #1b3346;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.property-info p {
+    margin: 0 0 12px;
+    color: #69747d;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.property-info strong {
+    color: #1b3346;
+}
+
+.property-info p:last-child {
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 0;
+    padding: 12px 16px;
+    background: #f1f5f7;
+    border: 1px solid #e0e6ea;
+    border-radius: 8px;
+    color: #1b3346;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.details-grid > div h3 {
+    margin: 0 0 18px;
+    color: #1b3346;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.table-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    padding: 9px 17px;
+    background: #455a6b;
+    color: #ffffff;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+.table-btn:hover {
+    background: #1b3346;
+}
+
+.lease-timeline h3 {
+    margin: 0 0 28px;
+    color: #1b3346;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    padding: 0 10px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: #dce3e8;
+}
+
+.timeline-item {
+    position: relative;
+    z-index: 1;
+    padding-top: 42px;
+    text-align: center;
+    color: #8a949c;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 3px solid #cbd4da;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+.timeline-item.completed {
+    color: #1c7c36;
+}
+
+.timeline-item.completed::before {
+    background: #2d8a4b;
+    border-color: #2d8a4b;
+    box-shadow: 0 0 0 5px #e6f4ea;
+}
+
+.timeline-item.failed {
+    color: #b12222;
+}
+
+.timeline-item.failed::before {
+    background: #b12222;
+    border-color: #b12222;
+    box-shadow: 0 0 0 5px #fdeaea;
+}
+
+.info-card {
+    padding: 18px 20px;
+    background: #f8fafb;
+    border: 1px solid #e0e6ea;
+    border-radius: 10px;
+}
+
+.info-card h4 {
+    margin: 0 0 8px;
+    color: #68737c;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.info-card p {
+    margin: 0;
+    color: #1b3346;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.documents-section h3 {
+    margin: 0 0 20px;
+    color: #1b3346;
+    font-size: 20px;
+}
+
+.documents-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.document-card {
+    padding: 20px;
+    background: #f8fafb;
+    border: 1px solid #e0e6ea;
+    border-radius: 10px;
+}
+
+.document-card h4 {
+    margin: 0 0 8px;
+    color: #1b3346;
+    font-size: 15px;
+}
+
+.document-card p {
+    margin: 0;
+    color: #7a858d;
+    font-size: 13px;
+}
+
+.management-section h3 {
+    margin: 0 0 18px;
+    color: #1b3346;
+    font-size: 20px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.complete-btn,
+.terminate-btn {
+    padding: 11px 20px;
+    border: 0;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.complete-btn {
+    background: #2d8a4b;
+}
+
+.complete-btn:hover {
+    background: #216b39;
+}
+
+.terminate-btn {
+    background: #a83232;
+}
+
+.terminate-btn:hover {
+    background: #842727;
+}
+
+.terminate-form {
+    margin-top: 25px;
+    padding: 24px;
+    background: #fff8f8;
+    border: 1px solid #efd3d3;
+    border-radius: 12px;
+}
+
+.terminate-form h3 {
+    margin: 0 0 15px;
+    color: #8d2b2b;
+    font-size: 18px;
+}
+
+.terminate-form textarea {
+    width: 100%;
+    min-height: 110px;
+    padding: 13px 15px;
+    border: 1px solid #d8dee5;
+    border-radius: 8px;
+    resize: vertical;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #1b3346;
+}
+
+.terminate-form textarea:focus {
+    border-color: #a83232;
+    box-shadow: 0 0 0 3px rgba(168, 50, 50, 0.08);
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.secondary-btn,
+.reject-btn {
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.secondary-btn {
+    background: #e7eaed;
+    color: #1b3346;
+}
+
+.secondary-btn:hover {
+    background: #d9dfe3;
+}
+
+.reject-btn {
+    background: #8d2b2b;
+    color: #ffffff;
+}
+
+.reject-btn:hover {
+    background: #701b1b;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.status.pending-acceptance {
+    background: #fff4d9;
+    color: #b78103;
+}
+
+.status.active {
+    background: #dff6e5;
+    color: #1c7c36;
+}
+
+.status.completed {
+    background: #ddeeff;
+    color: #225ea8;
+}
+
+.status.terminated {
+    background: #ffe1e1;
+    color: #b12222;
+}
+
+.status.declined {
+    background: #f1f1f1;
+    color: #666;
+}

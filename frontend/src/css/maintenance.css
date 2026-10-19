@@ -1,0 +1,328 @@
+.maintenance-page,
+.owner-page,
+.renter-page{
+    padding:30px;
+    background: #f5f7fa;
+    min-height: 100vh;
+}
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    margin-bottom:25px;
+    flex-wrap:wrap;
+}
+.page-header h2{
+    color:#0e2234;
+    margin-bottom:5px;
+}
+.page-header p{
+    color:#6a747e;
+}
+.maintenance-filter{
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+.maintenance-filter button{
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #a4a4a2;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+.maintenance-filter button:hover{
+    background: #455a6b;
+}
+.maintenance-filter .active{
+    background: #1b3346;
+}
+.table-responsive{
+    overflow-x:auto;    
+}
+.maintenance-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    overflow: hidden;
+}
+.maintenance-table th{
+    color:#fff;
+    background:#1b3346;
+    text-align:left;
+    padding:14px;
+}
+
+.maintenance-table td{
+    padding:14px;
+    border-bottom:1px solid #ececec;
+}
+.maintenance-table tbody tr:hover{
+    background:#f8fafb;
+}
+.table-message{
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    color: #6a747e;
+}
+.maintenance-form{
+    background:#fff;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+.form-group label{
+    margin-bottom:8px;
+    color:#0e2234;
+    font-weight:600;
+}
+.form-group input,
+.form-group select,
+.form-group textarea{
+    padding:12px;
+    border:1px solid #d8dee5;
+    border-radius:8px;
+    font-size:15px;
+    transition:.3s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#455a6b;
+    box-shadow:0 0 0 3px rgba(69,90,107,.2);
+    outline:none;
+}
+.form-group textarea{
+    resize:vertical;
+}
+.image-preview{
+    margin:20px 0;
+}
+.image-preview img,
+.maintenance-preview,
+.maintenance-image{
+    width:100%;
+    max-width: 420px;
+    border-radius:12px;
+    border:1px solid #d8dee5;
+}
+.details-header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+.details-card{
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+.details-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+    margin: 25px 0;
+}
+.details-card h3{
+    color: #1b3346;
+    margin-bottom: 15px;
+}
+.details-card p{
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+.details-card p strong{
+    color: #444;
+
+}
+.details-card hr{
+    margin: 25px 0;
+    border: none;
+    border-top: 1px solid #e5e5e5;
+}
+.response-section{
+    margin-top: 20px;
+}
+.section-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.response-status{
+    background: #E8F5E9;
+    color: #2e7d32;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.owner-response{
+    background: #eef3f6;
+    border-left: 5px solid #455a6b;
+    padding: 18px;
+    border-radius: 10px;
+    color: #2d4559;
+    margin-bottom: 20px;
+}
+.owner-response h5{
+    margin-bottom: 10px;
+    color: #1b3346;
+}
+.owner-response p{
+    margin: 0;
+    line-height: 1.7;
+    color: #555;
+}
+.response-label{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1b3346;
+}
+.status-bdg,
+.priority-badge{
+    display:inline-flex !;
+    align-items:center;
+    justify-content:center;
+    min-width:90px;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+    color:#fff !important;
+    text-align:center;
+}
+.status-bdg.open{
+    background:#607d8b;
+}
+.status-bdg.in-progress{
+    background:#f59e0b;
+}
+.status-bdg.resolved{
+    background:#2e7d32;
+}
+.status-bdg.cancelled{
+    background:#721c24;
+}
+.priority-badge.low{
+    background:#6a747e;
+}
+.priority-badge.medium{
+    background:#455a6b;
+}
+.priority-badge.high{
+    background:#d97706;
+}
+.priority-badge.emergency{
+    background:#721c24;
+}
+.primary-btn,
+.secondary-btn,
+.cancel-btn,
+.delete-btn,
+.back-btn,
+.edit-btn,
+.table-btn,
+.status-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 14px;
+}
+.primary-btn{
+    background:#1b3346;
+    color:#fff;
+}
+.primary-btn:hover{
+    background:#071321;
+}
+.secondary-btn,
+.back-btn{
+    background: #6a747e;
+    color: white;
+}
+.secondary-btn:hover,
+.back-btn:hover{
+    background: #455a6b;
+}
+.cancel-btn{
+    background: #a4a4a2;
+    color: #071321;
+}
+.cancel-btn:hover{
+    background: #8b8b8b;
+}
+.edit-btn{
+    background: #455a6b ;
+    color: white;
+}
+.edit-btn:hover{
+    background: #2d4559;
+}
+.delete-btn{
+    background:#c62828;
+    color:#fff;
+}
+.delete-btn:hover{
+    background:#8b1e1e;
+}
+.table-btn{
+    background: #2d4559;
+    color: white;
+}
+.table-btn:hover{
+    background: #1b3346;
+}
+.status-btn{
+    background: #455a6b;
+    color: white;
+}
+.status-btn:hover{
+    background: #1b3346;
+}
+.details-actions,
+.form-actions,
+.form-button,
+.status-actions{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+    flex-wrap: wrap;
+}
+.details-card textarea{
+    width: 100%;
+    min-height: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #d8dee5;
+    resize: vertical;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 12px 0 18px;
+    transition: .3s;
+}
+.details-card textarea:focus{
+    outline: none;
+    border-color: #455a6b;
+}

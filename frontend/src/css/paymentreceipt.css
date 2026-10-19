@@ -1,0 +1,60 @@
+.receipt-card{
+    margin-top:30px;
+    padding:25px;
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:16px;
+}
+
+.receipt-header{
+    margin-bottom:20px;
+}
+
+.receipt-header h3{
+    color:#1b3346;
+    margin-bottom:6px;
+}
+
+.receipt-header p{
+    color:#6b7280;
+    font-size:14px;
+}
+
+.receipt-image{
+    width:100%;
+    max-width:650px;
+    border-radius:12px;
+    border:1px solid #d1d5db;
+    display:block;
+    margin:auto;
+}
+
+.receipt-actions{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.receipt-empty{
+    text-align:center;
+    padding:50px 20px;
+    border:2px dashed #d1d5db;
+    border-radius:14px;
+    background:#f9fafb;
+}
+
+.receipt-icon{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.receipt-empty h4{
+    color:#1b3346;
+    margin-bottom:10px;
+}
+
+.receipt-empty p{
+    color:#6b7280;
+}

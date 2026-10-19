@@ -1,0 +1,111 @@
+.register-page{
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4f4f4;
+    padding: 100px 40px 20px;
+    background: linear-gradient(rgba(7,19,33,.25),rgba(7,19,33,.85)),
+    url(https://www.rentcandlewood.com/images/blog/Update-Website-1024x576.png);
+    background-position: center;
+    background-size:cover ;
+}
+
+.register-box{
+    background:#ffffff;
+    width:100%;
+    padding:40px;
+    max-width: 700px;
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,.20);
+}
+.register-header{
+    text-align: center;
+    margin-bottom:30px;
+
+}
+.register-header h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #071321;
+}
+.register-header p {
+    margin: 0;
+    color: #64747e;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.register-fields{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.register-field{
+    display: flex;
+    flex-direction: column;
+}
+.register-field label{
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #071321;
+    font-size: 15px;
+}
+
+.register-field input,
+.register-field select{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #D8DCE2;
+    border-radius:8px;
+    font-size:15px;
+    outline: none;
+    transition: .3s;
+    background: #fff;
+}
+.register-field input::placeholder {
+    color: #8a959e;
+}
+.register-field input:focus,
+.register-field select:focus{
+    border-color: #455A6B;
+}
+.register-field-full{
+    grid-column: 1/-1;
+}
+.register-button{
+    width:100%;
+    margin-bottom: 30px;
+    padding:14px;
+    border:none;
+    background:#455A6B;
+    color:#ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size:16px;
+    cursor:pointer;
+    transition: .3s;
+}
+
+.register-button:hover{
+    background:#2D4559;
+}
+
+.register-login{
+    text-align:center;
+    margin-top:25px;
+    color:#64746E;
+}
+
+.register-login a{
+    margin-left: 5px;
+    text-decoration:none;
+    color:#455A6B;
+    font-weight:600;
+    transition: .3s;
+}
+.register-login a:hover{
+    color: #2D4559;
+}
+.register-actions{
+    margin-top: 25px
+}

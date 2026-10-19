@@ -1,0 +1,106 @@
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(7,19,33,.85),rgba(7,19,33,.85)),
+                url("https://www.rentcandlewood.com/images/blog/Update-Website-1024x576.png");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px 40px;
+}
+.login-box{
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.20);
+}
+.login-header{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.login-form h2{
+    color: #071321;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+.login-form p{
+    text-align: center;
+    color: #64747E;
+}
+.login-field{
+    margin-bottom: 20px;
+}
+.login-field label{
+    display: block;
+    margin-bottom: 8px;
+    color: #071321;
+    font-weight: 600;
+    font-size: 15px;
+}
+.login-field input{
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 15px;
+    border: 1px solid #d8dce2;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: .3s;
+    background: #fff;
+    outline: none;
+}
+.login-field input::placeholder{
+    color: #8A95A2;
+}
+.login-field input:focus{
+    border-color: #455A6B;
+    box-shadow: 0 0 0 3px rgba(69, 90, 107, .15);
+}
+.login-button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #455A6B;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+.login-button:hover{
+    background: #2D4559;
+    transform: translateY(-2px);
+}
+.login-forgot{
+    text-align: right;
+    margin: 15px 0 20px;
+}
+.login-forgot a{
+    color: #455A6B;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.login-forgot a:hover{
+    color: #2D4559;
+}
+.login-register{
+    margin-top: 25px;
+    text-align: center;
+    color: #64747E;
+    font-size: 15px;
+}
+.login-register a{
+    margin-left: 5px;
+    color: #455A6B;
+    font-weight: 600;
+    text-decoration: none;
+}
+.login-register a:hover{
+    color: #2D4559;
+}

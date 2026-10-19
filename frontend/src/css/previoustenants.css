@@ -1,0 +1,186 @@
+.previous-tenants-page {
+    width: 100%;
+    padding: 30px;
+    background: #F6F8FB;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.previous-tenants-page .page-header {
+    margin-bottom: 30px;
+}
+
+.previous-tenants-page .page-header h2 {
+    font-size: 2rem;
+    color: #1B3346;
+    margin: 0 0 8px;
+    font-weight: 700;
+}
+
+.previous-tenants-page .page-header p {
+    color: #6A747E;
+    font-size: 15px;
+    margin: 0;
+}
+
+.previous-tenants-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e1e7eb;
+    border-radius: 12px;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.history-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.history-toolbar input {
+    width: 320px;
+    padding: 12px 15px;
+    border: 1px solid #d5dde3;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    color: #1B3346;
+    box-sizing: border-box;
+}
+
+.history-toolbar input::placeholder {
+    color: #8a949c;
+}
+
+.history-toolbar input:focus {
+    border-color: #1B3346;
+}
+
+.previous-tenants-page .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 10px;
+}
+
+.previous-tenants-table {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.previous-tenants-table thead {
+    background: #1B3346;
+    color: #ffffff;
+}
+
+.previous-tenants-table th {
+    text-align: left;
+    padding: 15px;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    border-bottom: 1px solid #e1e7eb;
+}
+
+.previous-tenants-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ececec;
+    color: #4f5b65;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.previous-tenants-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.previous-tenants-table td strong {
+    display: block;
+    color: #1B3346;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.previous-tenants-table td span {
+    display: block;
+    color: #7b858d;
+    font-size: 12px;
+}
+
+.history-status {
+    display: inline-block !important;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px !important;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.history-status.completed {
+    background: #e8f7ef;
+    color: #238653;
+}
+
+.history-status.terminated {
+    background: #fdecec;
+    color: #c94a4a;
+}
+
+.history-details-btn {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #1B3346;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.history-details-btn:hover {
+    background: #294b62;
+}
+
+.empty-history {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.empty-history h3 {
+    margin: 0 0 8px;
+    color: #1B3346;
+    font-size: 20px;
+}
+
+.empty-history p {
+    margin: 0;
+    color: #7b858d;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .previous-tenants-page {
+        padding: 20px;
+    }
+
+    .previous-tenants-card {
+        padding: 18px;
+    }
+
+    .history-toolbar {
+        justify-content: stretch;
+    }
+
+    .history-toolbar input {
+        width: 100%;
+    }
+
+    .previous-tenants-page .page-header h2 {
+        font-size: 1.6rem;
+    }
+}
